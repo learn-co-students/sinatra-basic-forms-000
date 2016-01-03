@@ -1,0 +1,25 @@
+<div class='container' style="padding-top: 20px;">
+  <div class='row'>
+    <div class='span8'>
+      <div class="page-header">
+        <form action="../<%= @song.id %>/update" method="post">
+          <input type="text" name="song[title]" value="<%= @song.title %>">
+
+
+          Artist
+          <input type="text" name="song[artist]" value="<%= @song.artist %>">
+
+          Album
+          <input type="text" name="song[album]" value="<%= @song.album %>">
+
+          Genre
+          <input type="text" name="song[genre]" value="<%= @song.genre %>">
+          Length
+          <input type="text" name="song[length]" value="<%= @song.length %>">
+          <a href ="../<%= @song.id %>">Back</a>
+          <input type="submit" name="Save Changes" value="Save Changes">
+
+    </div>
+    </form>
+  </div>
+</div>
