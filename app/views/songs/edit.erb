@@ -1,0 +1,33 @@
+    <h3>Edit Page</h3>
+<form action="/songs/<%= @song.id %>" method="POST">
+  <input type="submit" value="Save Changes" />
+
+
+
+    <table class='table table-striped'>
+        <tr>
+          <td>Artist</td>
+          <td><input type="text" name="song[artist]" value="<%= @song.artist %>" /></td>
+        </tr>
+        <tr>
+          <td>Song</td>
+          <td><input type="text" name="song[title]" value='<%= @song.title %>' /></td>
+        </tr>
+        </tr>
+        <tr>
+          <td>Album</td>
+          <td><input type="text" name="song[album]" value="<%= @song.album %>" /></td>
+        </tr>
+        </tr>
+        <tr>
+          <td>Genre</td>
+          <td><input type="text" name="song[genre]" value="<%= @song.genre %>" /></td>
+        </tr>
+        </tr>
+        <tr>
+          <td>Length</td>
+          <td><input type="text" name="song[length]" value="<%= @song.length %>" /></td>
+        </tr>
+      </table>
+
+</form>
